@@ -1,7 +1,7 @@
 node {
     stage('Checkout') {
         // Check out the source code from Git
-        git url: 'https://github.com/<your-org>/<your-repo>.git', credentialsId: 'github-token'
+        echo "git url: 'https://github.com/<your-org>/<your-repo>.git', credentialsId: 'github-token'"
     }
     stage('Build') {
         // Example: Build a Maven project
